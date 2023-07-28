@@ -74,15 +74,15 @@ X2 = [x + barWidth for x in X1]
 X3 = [x + barWidth for x in X2]
 X4 = [x + barWidth for x in X3]
 
-pre_ethyl_color = 'lightblue'
-post_ethyl_color = 'darkblue'
-pre_citral_color = 'salmon'
-post_citral_color = 'darkred'
+pre_ethyl_color = 'salmon'
+post_ethyl_color = 'darkred'
+pre_citral_color = 'lightblue'
+post_citral_color = 'darkblue'
 
-plt.bar(X1, ave_t[0], color=pre_citral_color, width=barWidth, label='Pre-Citral')
-plt.bar(X2, ave_t[2], color=post_citral_color, width=barWidth, label='Pre-Ethyl')
-plt.bar(X3, ave_t[1], color=pre_ethyl_color, width=barWidth, label='Post-Citral')
-plt.bar(X4, ave_t[3], color=post_ethyl_color, width=barWidth, label='Post-Ethyl')
+plt.bar(X3, ave_t[0], color=pre_citral_color, width=barWidth, label='Pre-Citral')
+plt.bar(X1, ave_t[2], color=post_citral_color, width=barWidth, label='Pre-Ethyl')
+plt.bar(X4, ave_t[1], color=pre_ethyl_color, width=barWidth, label='Post-Citral')
+plt.bar(X2, ave_t[3], color=post_ethyl_color, width=barWidth, label='Post-Ethyl')
 plt.xticks([r + barWidth for r in range(len(ave_t[0]))],
         ['trials 1-10', 'trials 11-20', 'trials 21-30'])
 plt.ylabel('Average cluster size per block')  # Add the label for y-axis
@@ -168,14 +168,14 @@ X2 = [x + barWidth for x in X1]
 X3 = [x + barWidth for x in X2]
 X4 = [x + barWidth for x in X3]
 
-pre_ethyl_color = 'lightblue'
-post_ethyl_color = 'darkblue'
-pre_citral_color = 'salmon'
-post_citral_color = 'darkred'
+pre_ethyl_color = 'salmon'
+post_ethyl_color = 'darkred'
+pre_citral_color = 'lightblue'
+post_citral_color = 'darkblue'
 
 plt.bar(X3, ave_t[0], color=pre_citral_color, width=barWidth, label='Pre-Citral')
-plt.bar(X4, ave_t[2], color=post_citral_color, width=barWidth, label='Post-Citral')
-plt.bar(X1, ave_t[1], color=pre_ethyl_color, width=barWidth, label='Pre-Ethyl')
+plt.bar(X1, ave_t[2], color=post_citral_color, width=barWidth, label='Pre-Ethyl')
+plt.bar(X4, ave_t[1], color=pre_ethyl_color, width=barWidth, label='Post-Citral')
 plt.bar(X2, ave_t[3], color=post_ethyl_color, width=barWidth, label='Post-Ethyl')
 plt.xticks([r + barWidth for r in range(len(ave_t[0]))],
         ['trials 1-10', 'trials 11-20', 'trials 21-30'])
@@ -261,14 +261,14 @@ X2 = [x + barWidth for x in X1]
 X3 = [x + barWidth for x in X2]
 X4 = [x + barWidth for x in X3]
 
-pre_ethyl_color = 'lightblue'
-post_ethyl_color = 'darkblue'
-pre_citral_color = 'salmon'
+pre_ethyl_color = 'salmon'
+post_ethyl_color = 'darkred'
+pre_citral_color = 'lightblue'
 post_citral_color = 'darkred'
 
 plt.bar(X1, ave_t[0], color=pre_citral_color, width=barWidth, label='Pre-Carvone')
-plt.bar(X2, ave_t[2], color=post_citral_color, width=barWidth, label='Pre-cis-3-hexen-1-ol')
-plt.bar(X3, ave_t[1], color=pre_ethyl_color, width=barWidth, label='Post-Carvone')
+plt.bar(X3, ave_t[2], color=post_citral_color, width=barWidth, label='Pre-cis-3-hexen-1-ol')
+plt.bar(X2, ave_t[1], color=pre_ethyl_color, width=barWidth, label='Post-Carvone')
 plt.bar(X4, ave_t[3], color=post_ethyl_color, width=barWidth, label='Post-cis-3-hexen-1-ol')
 plt.xticks([r + barWidth for r in range(len(ave_t[0]))],
         ['trials 1-10', 'trials 11-20', 'trials 21-30'])
